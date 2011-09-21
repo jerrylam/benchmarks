@@ -1,6 +1,6 @@
 #!/bin/bash
 # Stefanie Edgar
-# Aug 26 2011 
+# 09 Sept 2011
 # A script to automate benchmarking for DRBD volumes. 
 # tests with filesystems:    xfs, ext3, ext4
 # tests with  programs:      iozone, bonnie++, sysbench
@@ -159,8 +159,8 @@ do
     echo
     echo
     echo "---- Bonnie Summary: ----"
-    bonnie_writes=$(grep -m 1 $HOSTNAME bonnie_results.txt | awk {'print $11'}) 
-    bonnie_reads=$(grep -m 1 $HOSTNAME bonnie_results.txt | awk {'print $5'}) 
+    bonnie_reads=$(grep -m 1 $HOSTNAME bonnie_results.txt | awk {'print $11'}) 
+    bonnie_writes=$(grep -m 1 $HOSTNAME bonnie_results.txt | awk {'print $5'}) 
     bonnie_rewrites=$(grep -m 1 $HOSTNAME bonnie_results.txt | awk {'print $7'}) 
     echo "Block Reads     Block Writes       Re-writes"
     echo "$bonnie_reads         $bonnie_writes          $bonnie_rewrites"
