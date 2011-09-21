@@ -1,0 +1,20 @@
+Usage:   
+     ./drbd_bench.bash <device> <resource-name> <mountpoint>
+
+Example: 
+     ./drbd_bench.bash /dev/drbd1 benchmark /mnt/data
+          
+ This is a script to automate benchmarking of various IO performance tests.
+ (bonnie++, iozone, and sysbench)
+ It formats your device ext3, ext4, and xfs, so you can compare the benchmarks.
+
+ It can be used with various protocols like IPoIB, SDP, SSOCKS, and IPv4.
+ Run this script for each one you want to test, once the environment is set up.
+ You can also swap out different disks to see how they perform.
+ Use with 'tee' to save results.
+
+ *** WARNING: ALL DATA WILL BE DESTROYED on the device you choose. *** 
+     These benchmarks reformat and overwrite the given device during testing.
+     Usually this is a good thing, testing out a new device configuration, 
+     just don't choose the wrong device.
+
