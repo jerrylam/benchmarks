@@ -7,7 +7,7 @@
 #
 # Usage:   ./drbd_bench.bash <device> <resource-name> <mountpoint>
 #          Can be used with various protocols like IPoIB, SDP, SSOCKS, and IPv4.
-#          Run this script for each one you want to test, once the environment is set up.
+#          Run this script for each protocol you want to test, once the environment is set up.
 #          You can also swap out different disks to see how they perform.
 #          Use with 'tee' to save results.
 #
@@ -114,7 +114,7 @@ if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] ;then
     echo
     echo " Usage:   ./drbd_bench.bash <device> <resource-name> <mountpoint>"
     echo "          Can be used with various protocols like IPoIB, SDP, SSOCKS, and IPv4."
-    echo "          Run this script for each one you want to test, once the environment is set up."
+    echo "          Run this script for each protocol you want to test, once the environment is set up."
     echo "          You can also swap out different disks to see how they perform."
     echo "          Use with 'tee' to save results."
     echo

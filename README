@@ -9,7 +9,7 @@ Example:
  It formats your device ext3, ext4, and xfs, so you can compare the benchmarks.
 
  It can be used with various protocols like IPoIB, SDP, SSOCKS, and IPv4.
- Run this script for each one you want to test, once the environment is set up.
+ Run this script for each protocol you want to test, once the environment is set up.
  You can also swap out different disks to see how they perform.
  Use with 'tee' to save results.
 
